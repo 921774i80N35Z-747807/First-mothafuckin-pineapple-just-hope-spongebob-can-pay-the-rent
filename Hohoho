@@ -1,0 +1,197 @@
+echo "#== Installed Android Tools ==
+
+2022-12-07 23:01:50,296 DEBUG: Reading 'config.yml'
+2022-12-07 23:01:50,346 WARNING: ipfs_cid not found, skipping CIDv1 generation
+2022-12-07 23:01:50,348 INFO: Creating log directory
+2022-12-07 23:01:50,348 INFO: Creating temporary directory
+2022-12-07 23:01:50,349 INFO: Creating output directory
+2022-12-07 23:01:50,418 DEBUG: Getting git vcs interface for https://gitlab.com/divested-mobile/hypatia
+2022-12-07 23:01:50,419 DEBUG: Checking us.spotco.malwarescanner:90
+2022-12-07 23:01:50,419 INFO: Building version 2.27 (90) of us.spotco.malwarescanner
+2022-12-07 23:01:50,419 DEBUG: > sudo passwd --lock root
+passwd: password expiry information changed.
+2022-12-07 23:01:50,931 DEBUG: > sudo SUDO_FORCE_REMOVE=yes dpkg --purge sudo
+(Reading database ... 36771 files and directories currently installed.)
+Removing sudo (1.9.5p2-3) ...
+Purging configuration files for sudo (1.9.5p2-3) ...
+dpkg: warning: while removing sudo, directory '/etc/sudoers.d' not empty so not removed
+2022-12-07 23:02:08,504 INFO: Getting source for revision 7d774092c63d4b376ed7c9d22016ea7ece582387
+2022-12-07 23:02:08,506 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:08,506 DEBUG: > git rev-parse --show-toplevel
+2022-12-07 23:02:08,720 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:08,720 DEBUG: > git submodule foreach --recursive git reset --hard
+2022-12-07 23:02:08,937 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:08,937 DEBUG: > git reset --hard
+2022-12-07 23:02:09,249 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:09,250 DEBUG: > git submodule foreach --recursive git clean -dffx
+2022-12-07 23:02:09,361 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:09,361 DEBUG: > git clean -dffx
+2022-12-07 23:02:09,479 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:09,479 DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com fetch origin
+warning: redirecting to https://gitlab.com/divested-mobile/hypatia.git/
+2022-12-07 23:02:10,595 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:10,595 DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com remote prune origin
+2022-12-07 23:02:11,509 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:11,510 DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com fetch --prune --tags --force origin
+2022-12-07 23:02:12,324 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:12,325 DEBUG: > git remote set-head origin --auto
+2022-12-07 23:02:13,241 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:13,242 DEBUG: > git checkout -f 7d774092c63d4b376ed7c9d22016ea7ece582387
+2022-12-07 23:02:13,454 DEBUG: Directory: build/us.spotco.malwarescanner
+2022-12-07 23:02:13,454 DEBUG: > git clean -dffx
+2022-12-07 23:02:13,567 INFO: Creating local.properties file at build/us.spotco.malwarescanner/local.properties
+2022-12-07 23:02:13,569 INFO: Creating local.properties file at build/us.spotco.malwarescanner/app/local.properties
+2022-12-07 23:02:13,570 DEBUG: Removing debuggable flags from build/us.spotco.malwarescanner/app
+2022-12-07 23:02:13,623 INFO: Cleaning Gradle project...
+2022-12-07 23:02:13,624 DEBUG: Directory: build/us.spotco.malwarescanner/app
+2022-12-07 23:02:13,624 DEBUG: > /home/vagrant/fdroidserver/gradlew-fdroid clean
+Found 7.5.1 via distributionUrl
+Downloading missing gradle version 7.5.1
+cachedir /home/vagrant/.cache/fdroidserver
+/home/vagrant/.cache/fdroidserver/gradle-7.5.1-bin.zip: OK
+Running /opt/gradle/versions/7.5.1/bin/gradle clean
+
+Welcome to Gradle 7.5.1!
+
+Here are the highlights of this release:
+ - Support for Java 18
+ - Support for building with Groovy 4
+ - Much more responsive continuous builds
+ - Improved diagnostics for dependency resolution
+
+For more details see https://docs.gradle.org/7.5.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+> Task :app:clean UP-TO-DATE
+
+BUILD SUCCESSFUL in 59s
+1 actionable task: 1 up-to-date
+2022-12-07 23:03:23,046 INFO: Scanning source for common problems...
+2022-12-07 23:03:23,074 DEBUG: scanner is configured to use signature data from: 'suss'
+2022-12-07 23:03:23,112 INFO: Removing gradle-wrapper.jar at gradle/wrapper/gradle-wrapper.jar
+2022-12-07 23:03:23,113 INFO: Creating source tarball...
+2022-12-07 23:03:23,399 INFO: Building Gradle project...
+2022-12-07 23:03:23,399 DEBUG: Directory: build/us.spotco.malwarescanner/app
+2022-12-07 23:03:23,400 DEBUG: > /home/vagrant/fdroidserver/gradlew-fdroid assembleRelease
+Found 7.5.1 via distributionUrl
+Running /opt/gradle/versions/7.5.1/bin/gradle assembleRelease
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+Exception while marshalling /opt/android-sdk/platforms/android-10/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-11/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-12/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-13/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-14/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-15/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-16/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-17/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-18/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-19/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-20/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-21/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-22/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-23/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-24/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-25/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-26/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-27/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-28/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-29/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-30/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-31/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-32/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-33/package.xml. Probably the SDK is read-only
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :app:generateReleaseBuildConfig
+> Task :app:javaPreCompileRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:checkReleaseAarMetadata
+
+> Task :app:mergeReleaseResources
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-pt/strings.xml:37:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-af/strings.xml:38:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values/strings.xml:43:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-de/strings.xml:35:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-ru/strings.xml:41:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-es/strings.xml:41:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-pl/strings.xml:42:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-fi/strings.xml:40:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-it/strings.xml:41:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+/home/vagrant/build/us.spotco.malwarescanner/app/src/main/res/values-fr/strings.xml:35:4: Multiple substitutions specified in non-positional format of string resource string/main_scanning_done. Did you mean to add the formatted="false" attribute?
+
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs NO-SOURCE
+> Task :app:stripReleaseDebugSymbols NO-SOURCE
+> Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:processApplicationManifestReleaseForBundle
+> Task :app:mergeReleaseJavaResource
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:mergeReleaseArtProfile
+> Task :app:processReleaseManifestForPackage
+> Task :app:bundleReleaseResources
+> Task :app:processReleaseResources
+
+> Task :app:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :app:mergeReleaseGeneratedProguardFiles
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:minifyReleaseWithR8
+> Task :app:lintVitalReportRelease
+> Task :app:lintVitalRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:shrinkReleaseRes
+> Task :app:optimizeReleaseResources
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1m 57s
+37 actionable tasks: 37 executed
+2022-12-07 23:05:21,783 DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/vagrant/build/us.spotco.malwarescanner, universal_newlines=False, shell=None, istream=<valid stream>)
+2022-12-07 23:05:21,804 INFO: Successfully built version 2.27 of us.spotco.malwarescanner from 7d774092c63d4b376ed7c9d22016ea7ece582387
+2022-12-07 23:05:22,343 DEBUG: AXML contains a RESOURCE MAP
+2022-12-07 23:05:22,345 DEBUG: Start of Namespace mapping: prefix 29: 'android' --> uri 49: 'http://schemas.android.com/apk/res/android'
+2022-12-07 23:05:22,348 DEBUG: Checking build/us.spotco.malwarescanner/app/build/outputs/apk/release/app-release-unsigned.apk
+2022-12-07 23:05:22,370 DEBUG: AXML contains a RESOURCE MAP
+2022-12-07 23:05:22,371 DEBUG: Start of Namespace mapping: prefix 29: 'android' --> uri 49: 'http://schemas.android.com/apk/res/android'
+2022-12-07 23:05:22,391 INFO: success: us.spotco.malwarescanner
+2022-12-07 23:05:22,392 INFO: Finished
+2022-12-07 23:05:22,392 INFO: 1 build succeeded First-mothafuckin-pineapple-just-hope-spongebob-can-pay-the-rent" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/921774i80N35Z-747807/First-mothafuckin-pineapple-just-hope-spongebob-can-pay-the-rent.git
+git push -u
